@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+/* #252525 */
+/* #474747; */
+/* background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,1) 100%); */
+
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background: #000;
+    color: #fff;
+    width:100%;
+    height: 100%;
+
+}
+
+#background {
+    border: 1px dotted #CCC;
+    min-height: 90vh;
+}
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 98%, rgba(0,0,0,1) 100%);
+}
+
+.footer{
+    background:#252525;
+    height: 25%;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+.container{
+    border-bottom: 2px solid rgba(255,255,255,.5);
+}
+
+    .container, .container-info{
+        width: 90%;
+        margin: auto;
+    }
+
+    .container-info{
+        padding-top: 30px;
+    }
+
+.setlist{
+    margin: 30px 0 5px 0;
+}
+
+    .setlist>li{
+        display: inline;
+        margin-right: 100px;
+        font-size: 20px;
+    }
+
+        .setlist>.info:hover{
+            padding-bottom: 2px;
+            border-bottom: 2px solid #00991f;
+        }
+
+#logo{
+    float: right;
+    margin: -5px 0 0 0;
+}
+
+.info, .acoes{
+    cursor: pointer;
+}
+    .acoes, .box-cast{
+        display: inline-block;
+        text-align: center;
+        margin: 0 40px 0 0;
+    }
+
+        .acoes > h3{
+            margin-top: 10px;
+        }
+
+
+.general{
+    display: inline-block;
+}
+
+#sinopse{
+    position: absolute;
+    width: 60%;
+    margin: 0 0 0 20px;
+    float: right;
+}
+
+
+.box-cast{
+    background: #474747;
+    margin-right: 10px;
+    width: 250px;
+    height: 70px;
+}
+
+    .box-cast h2{
+        margin-top: 15px;
+    }
+
+    .general h3, .box-cast h3{
+        margin-top: 5px;
+    }

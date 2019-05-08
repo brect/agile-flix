@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AgileFlix</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+
+<body>
+
+
+    <div class="season">
+        
+    </div>
+
+    <div id="overlay"></div>
+    <div class="main" id="background"></div>
+
+    <div class="footer">
+        <div class="container">
+            <ul class="setlist">
+                <li class="info" onclick="contentChange('general')">GENERAL</li>
+                <li class="info" onclick="contentChange('cast')">ELENCO</li>
+                <li class="info" onclick="contentChange('premios')">PRINCIPALES PREMIOS</li>
+                <li id="logo">
+                    <img src="images/logo-telecine.svg" alt="Logo Telecine" width="40">
+                </li>
+            </ul>
+        </div>
+            <div class="container-info" id="content">
+            </div>
+    </div>
+
+    <script src="js/requisicao.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
