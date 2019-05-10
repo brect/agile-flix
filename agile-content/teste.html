@@ -1,40 +1,105 @@
-<ul class="info">
-    <li>GENERAL</li>
-    <li>ELENCO</li>
-    <li>PRINCIPALES PREMIOS</li>
-</ul>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        /* Style the tab */
+        .tab {
+            overflow: auto;
+                border-bottom: 1px solid #ccc;
+                width: 300px;
+        }
+        
+
+        /* Style the div inside the tab */
+        .tab div {
+            float: left;
+            cursor: pointer;
+            padding: 10px 15px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        padding: 5px 10px 10px 10px;
+
+        /* Change background color of div on hover */
+        .tab>div:hover {
+            border-bottom: 2px solid #00991f;            padding: 10px 15px;
+        }
+
+        /* Create an active/current tablink class */
+        .tab>div.active {
+            border-bottom: 2px solid #00991f;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+    margin: 6px 12px;
+    border-bottom: 1px solid #ccc;
+    width: 15%;
+        }
+
+        .tabcontent > div {
+            float: left;
+        }
 
 
-<div class="general-acoes">
-    <span class="acoes">
-        <img src="images/add-gray-s.svg" alt="Adicionar na lista">
-        <h3>My Lista</h3>
-    </span>
-    <span class="acoes">
-        <img src="images/sad-gray-w.svg" alt="Avaliar Reprodução">
-        <h3>Evaluar</h3>
-    </span>
-    <span class="acoes">
-        <img src="images/rec-gray-s.svg" alt="Gravar Reprodução">
-        <h3>Grabar</h3>
-    </span>
-    <span class="acoes">
-        <img src="images/share-gray-s.svg" alt="Compartilhar Reprodução">
-        <h3>Compartir</h3>
-    </span>
-</div>
-<div id="sinopse">
-    <h3>SINOPSE</h3>
-</div>
+    </style>
+</head>
 
+<body>
 
+    <!-- info temporadas -->
+    <div class="tab">
+        <div class="tablinks" onclick="openSeason(event, '1')">T1</div>
+        <div class="tablinks" onclick="openSeason(event, '2')">T2</div>
+        <div class="tablinks" onclick="openSeason(event, '3')">T3</div>
+    </div>
 
-<!-- <div class="info-elenco"></div> -->
+    <!-- info episodios -->
+    <div id="1" class="tabcontent">
+        <div class="ep-number">01</div>
+        <div class="ep-name">Trabalho Noturno</div>
+        <div class="ep-play"><img src="images/play-small-player-w.svg" alt="Play video"></div>
+    </div>
 
+    <div id="2" class="tabcontent">
+            <div class="ep-number">01</div>
+            <div class="ep-name">Trabalho Noturno</div>
+            <div class="ep-play"><img src="images/play-small-player-w.svg" alt="Play video"></div>
+    </div>
 
+    <div id="3" class="tabcontent">
+            <div class="ep-number">01</div>
+            <div class="ep-name">Trabalho Noturno</div>
+            <div class="ep-play"><img src="images/play-small-player-w.svg" alt="Play video"></div>
+    </div>
 
-<div style="align-items: center;">
-    <img src="https://occ-0-894-1123.1.nflxso.net/art/0ef00/005f864851e4be98e96f55020ce769fba680ef00.jpg" style="width: 30%;
-    margin-right: 30px;">
-    <img src="https://occ-0-894-1123.1.nflxso.net/art/0ef00/005f864851e4be98e96f55020ce769fba680ef00.jpg" style="width: 30%;">
-</div>
+    <script>
+
+        function openSeason(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "flex";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+</body>
+
+</html>
