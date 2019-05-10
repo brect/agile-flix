@@ -105,3 +105,12 @@ body{
     .general h3, .box-cast h3{
         margin-top: 5px;
     }
+
+    .info-season{
+        position: absolute;
+        /* z-index: auto; */
+        right: 5%;
+        top: 5%;
+    }
+
+

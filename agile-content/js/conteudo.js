@@ -68,4 +68,4 @@ function createSeason() {
 // console.log('i=' + i, window.infoSeason[i]['Synopsis']);
 // console.log('i=' + i, window.infoSeason[i]['Title']);
 
-document.getElementById(window.infoSeason[i]['SeasonNumber']).appendChild(div);
+// document.getElementById(window.infoSeason[i]['SeasonNumber']).appendChild(div);

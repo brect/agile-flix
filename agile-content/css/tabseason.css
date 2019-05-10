@@ -1,3 +1,50 @@
-.tabseason{
-    position: relative;
+/* season */
+
+.info {
+    border-bottom: 1px solid #ccc;
+    width: 300px;
+}
+
+/* Style the div inside the tab */
+
+.tab div {
+    float: left;
+    cursor: pointer;
+    padding: 10px 15px;
+    /* transition: 0.3s; */
+    font-size: 20px;
+}
+
+/* padding: 5px 10px 10px 10px; */
+
+/* Change background color of div on hover */
+
+/* .tab>div:hover {
+    border-bottom: 2px solid #00991f;
+    padding: 10px 15px;
+} */
+.tab>.tablinks:hover{
+display: inline;
+}
+.tab>.tablinks:hover{
+    border-bottom: 2px solid #00991f;
+}
+
+/* Create an active/current tablink class */
+
+.tab>div.active {
+    border-bottom: 2px solid #00991f;
+}
+
+/* Style the tab content */
+
+.tabcontent {
+    display: none;
+    margin: 6px 12px;
+    border-bottom: 1px solid #ccc;
+    width: 15%;
+}
+
+.tabcontent>div {
+    float: left;
 }

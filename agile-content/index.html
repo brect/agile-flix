@@ -20,7 +20,36 @@
 
 
 
-    <div class="info-season" id="season">TESTE</div>
+    <div class="info-season" id="season">
+        <!-- info temporadas -->
+        <div class="tab">
+            <div class="tablinks" onclick="openSeason(event, '1')">T1</div>
+            <div class="tablinks" onclick="openSeason(event, '2')">T2</div>
+            <div class="tablinks" onclick="openSeason(event, '3')">T3</div>
+        </div>
+    </div>
+
+
+
+    <!-- info episodios -->
+    <div id="1" class="tabcontent">
+            <div class="ep-number">01</div>
+            <div class="ep-name">Trabalho Noturno</div>
+            <div class="ep-play"><img src="images/play-small-player-w.svg" alt="Play video"></div>
+        </div>
+    
+        <div id="2" class="tabcontent">
+                <div class="ep-number">01</div>
+                <div class="ep-name">Trabalho Noturno</div>
+                <div class="ep-play"><img src="images/play-small-player-w.svg" alt="Play video"></div>
+        </div>
+    
+        <div id="3" class="tabcontent">
+                <div class="ep-number">01</div>
+                <div class="ep-name">Trabalho Noturno</div>
+                <div class="ep-play"><img src="images/play-small-player-w.svg" alt="Play video"></div>
+        </div>
+
 
     <div class="footer">
         <div class="container">
@@ -40,7 +69,8 @@
     <script src="js/requisicao.js"></script>
     <script src="js/main.js"></script>
     <script src="js/conteudo.js"></script>
-    <script src="js/season.json"></script>
+    <script src="js/season.js"></script>
+
 </body>
 
 </html>
