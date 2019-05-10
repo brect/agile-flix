@@ -20,5 +20,4 @@ requestInfo.onload = function () {
 //LOAD SEASON
 requestSeason.onload = function () {
     window.infoSeason = JSON.parse(requestSeason.response);
-    
 }

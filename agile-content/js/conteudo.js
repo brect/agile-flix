@@ -5,7 +5,7 @@ function contentChange(param) {
                 '<div class="general">' +
                 '<span class="acoes">' +
                 '<img src="images/add-gray-s.svg" alt="Adicionar na lista">' +
-                '<h3>My Lista</h3>' +
+                '<h3>Mi Lista</h3>' +
                 '</span>' +
                 '<span class="acoes">' +
                 '<img src="images/sad-gray-w.svg" alt="Avaliar Reprodução">' +
@@ -58,6 +58,16 @@ function createSeason() {
         } 
     }
 }
+
+
+//CRIA TITULO
+function createTitle(){
+    let div = document.createElement('div');
+    div.innerHTML = "<h2>" + "TESTE" + "</h2>";
+    document.getElementsByClassName("title");
+}
+
+
 
 
 // console.log('i=' + i, window.infoSeason[i]['Duration']);
